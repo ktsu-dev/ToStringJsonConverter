@@ -6,7 +6,7 @@ using System.Diagnostics;
 using System.Reflection;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-using ReflectionExtensions;
+using ktsu.io.Extensions;
 
 public class ToStringJsonConverterFactory : JsonConverterFactory
 {
