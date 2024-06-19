@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="ktsu.io.ReflectionExtensions" Version="1.0.0-alpha.1" />
+  </ItemGroup>
+</Project>
