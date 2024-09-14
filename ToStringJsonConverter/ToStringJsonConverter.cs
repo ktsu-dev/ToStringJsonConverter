@@ -1,12 +1,12 @@
 // Ignore Spelling: Stringify
 
-namespace ktsu.io.ToStringJsonConverter;
+namespace ktsu.ToStringJsonConverter;
 
 using System.Diagnostics;
 using System.Reflection;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-using ktsu.io.Extensions;
+using ktsu.Extensions;
 
 /// <summary>
 /// A factory for creating JSON converters that use a type's ToString and FromString methods for serialization.
