@@ -1,10 +1,11 @@
 // Ignore Spelling: Deserialize
+#pragma warning disable IL2026 // Members annotated with 'RequiresUnreferencedCodeAttribute' require dynamic access otherwise can break functionality when trimming application code
+#pragma warning disable IL3050 // Calling members annotated with 'RequiresDynamicCodeAttribute' may break functionality when AOT compiling.
 
-namespace ktsu.io.ToStringJsonConverter.Tests;
+namespace ktsu.ToStringJsonConverter.Tests;
 
-using System.Diagnostics.CodeAnalysis;
 using System.Text.Json;
-using ktsu.io.ToStringJsonConverter;
+using ktsu.ToStringJsonConverter;
 
 [TestClass]
 public class ToStringJsonConverterFactoryTests
@@ -13,7 +14,6 @@ public class ToStringJsonConverterFactoryTests
 	{
 		public string Value { get; set; } = string.Empty;
 
-		[DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicMethods)]
 		public static TestClass FromString(string value) => new() { Value = value };
 
 		public override string ToString() => Value;
@@ -23,7 +23,6 @@ public class ToStringJsonConverterFactoryTests
 	{
 		public string Value { get; set; } = string.Empty;
 
-		[DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicMethods)]
 		public static TestClass<TNumber> FromString<TSelf>(string value) => new() { Value = value };
 
 		public override string ToString() => Value;
