@@ -1,4 +1,4 @@
-# ktsu.io.ToStringJsonConverter
+# ktsu.ToStringJsonConverter
 
 ## Overview
 `ToStringJsonConverter` is a JSON converter factory that simplifies serialization and deserialization of custom types in .NET by leveraging the `ToString` and `FromString` methods.
@@ -11,7 +11,7 @@
 ## Installation
 Install via NuGet:
 ```sh
-dotnet add package ktsu.io.ToStringJsonConverter
+dotnet add package ktsu.ToStringJsonConverter
 ```
 
 ## Usage
