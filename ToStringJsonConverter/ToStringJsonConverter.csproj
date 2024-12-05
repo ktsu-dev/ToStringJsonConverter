@@ -3,6 +3,6 @@
     <NoWarn>$(NoWarn);CA1810;S2743;S3963;</NoWarn>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="ktsu.Extensions" Version="1.0.34" />
+    <PackageReference Include="ktsu.Extensions" Version="1.0.35" />
   </ItemGroup>
 </Project>
