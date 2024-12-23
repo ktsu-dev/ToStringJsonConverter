@@ -32,7 +32,8 @@ public class Test
 		Test test = new("test");
 		string jsonString = JsonSerializer.Serialize(test, JsonSerializerOptions);
 		var result = JsonSerializer.Deserialize<Test>(jsonString, JsonSerializerOptions);
-		Assert.AreEqual(test.hiddenString, result?.hiddenString);
+		Assert.IsNotNull(result);
+		Assert.AreEqual(test.hiddenString, result.hiddenString);
 	}
 
 	[TestMethod]
