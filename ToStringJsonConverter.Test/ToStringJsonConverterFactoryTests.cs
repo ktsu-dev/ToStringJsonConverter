@@ -38,7 +38,7 @@ public class ToStringJsonConverterFactoryTests
 	}
 
 	[TestMethod]
-	public void CanConvert_ShouldReturnTrueForValidType()
+	public void CanConvertShouldReturnTrueForValidType()
 	{
 		var factory = new ToStringJsonConverterFactory();
 		Assert.IsTrue(factory.CanConvert(typeof(TestClass)));
@@ -46,14 +46,14 @@ public class ToStringJsonConverterFactoryTests
 	}
 
 	[TestMethod]
-	public void CanConvert_ShouldReturnFalseForInvalidType()
+	public void CanConvertShouldReturnFalseForInvalidType()
 	{
 		var factory = new ToStringJsonConverterFactory();
 		Assert.IsFalse(factory.CanConvert(typeof(string)));
 	}
 
 	[TestMethod]
-	public void CreateConverter_ShouldReturnConverterForValidType()
+	public void CreateConverterShouldReturnConverterForValidType()
 	{
 		var factory = new ToStringJsonConverterFactory();
 		var converter = factory.CreateConverter(typeof(TestClass), GetOptions());
@@ -63,7 +63,7 @@ public class ToStringJsonConverterFactoryTests
 	}
 
 	[TestMethod]
-	public void Serialize_ShouldUseToString()
+	public void SerializeShouldUseToString()
 	{
 		var options = GetOptions();
 		var testInstance = new TestClass { Value = "test value" };
@@ -72,7 +72,7 @@ public class ToStringJsonConverterFactoryTests
 	}
 
 	[TestMethod]
-	public void SerializeGeneric_ShouldUseToString()
+	public void SerializeGenericShouldUseToString()
 	{
 		var options = GetOptions();
 		var testInstance = new TestClass<int> { Value = "test value" };
@@ -81,7 +81,7 @@ public class ToStringJsonConverterFactoryTests
 	}
 
 	[TestMethod]
-	public void Deserialize_ShouldUseFromString()
+	public void DeserializeShouldUseFromString()
 	{
 		var options = GetOptions();
 		string json = "\"test value\"";
@@ -91,7 +91,7 @@ public class ToStringJsonConverterFactoryTests
 	}
 
 	[TestMethod]
-	public void DeserializeGeneric_ShouldUseFromString()
+	public void DeserializeGenericShouldUseFromString()
 	{
 		var options = GetOptions();
 		string json = "\"test value\"";
@@ -101,7 +101,7 @@ public class ToStringJsonConverterFactoryTests
 	}
 
 	[TestMethod]
-	public void Deserialize_ShouldThrowJsonExceptionForInvalidToken()
+	public void DeserializeShouldThrowJsonExceptionForInvalidToken()
 	{
 		var options = GetOptions();
 		string json = "123";
