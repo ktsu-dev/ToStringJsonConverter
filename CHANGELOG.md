@@ -1,9 +1,3 @@
-## v1.0.48 (unknown)
-
-Changes since v1.0.48-pre.7:
-
-- Add scripts for automated metadata generation and versioning ([@Matthew Edmondson](https://github.com/Matthew Edmondson))
-
 ## v1.0.47-pre.1 (patch)
 
 Changes since v1.0.46:
