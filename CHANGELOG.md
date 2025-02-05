@@ -1,3 +1,17 @@
+## v1.0.49-pre.1 (patch)
+
+Changes since v1.0.48:
+
+- Add mailmap ([@matt-edmondson](https://github.com/matt-edmondson))
+- Add scripts for automated metadata generation and versioning ([@matt-edmondson](https://github.com/matt-edmondson))
+
+## v1.0.48 (patch)
+
+Changes since v1.0.48-pre.30:
+
+- Add mailmap ([@matt-edmondson](https://github.com/matt-edmondson))
+- Add scripts for automated metadata generation and versioning ([@matt-edmondson](https://github.com/matt-edmondson))
+
 ## v1.0.47-pre.1 (patch)
 
 Changes since v1.0.46:
@@ -34,6 +48,18 @@ Changes since v1.0.25:
 Changes since v1.0.24:
 
 - Rename package to ktsu.ToStringJsonConverter and update ktsu.Extensions to version 1.0.30 ([@matt-edmondson](https://github.com/matt-edmondson))
+
+## v1.0.10-pre.1 (patch)
+
+Changes since v1.0.9:
+
+- Add null check in TestRoundTrip to prevent null exception ([@matt-edmondson](https://github.com/matt-edmondson))
+- Refactor test method names to camel case ([@matt-edmondson](https://github.com/matt-edmondson))
+- Rename package to ktsu.ToStringJsonConverter and update ktsu.Extensions to version 1.0.30 ([@matt-edmondson](https://github.com/matt-edmondson))
+- Renamed metadata files ([@matt-edmondson](https://github.com/matt-edmondson))
+- Replace LICENSE file with LICENSE.md and update copyright information ([@matt-edmondson](https://github.com/matt-edmondson))
+- Update ktsu.Extensions package reference to version 1.0.31 ([@matt-edmondson](https://github.com/matt-edmondson))
+- Update LICENSE file to LICENSE.md with copyright notice ([@matt-edmondson](https://github.com/matt-edmondson))
 
 ## v1.0.1 (patch)
 
