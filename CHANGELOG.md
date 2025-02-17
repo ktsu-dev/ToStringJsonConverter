@@ -1,3 +1,19 @@
+## v1.1.0 (minor)
+
+Changes since v1.0.0:
+
+- Add mailmap ([@matt-edmondson](https://github.com/matt-edmondson))
+- Add null check in TestRoundTrip to prevent null exception ([@matt-edmondson](https://github.com/matt-edmondson))
+- Add scripts for automated metadata generation and versioning ([@matt-edmondson](https://github.com/matt-edmondson))
+- Apply new editorconfig ([@matt-edmondson](https://github.com/matt-edmondson))
+- Migrate ktsu.io to ktsu namespace ([@matt-edmondson](https://github.com/matt-edmondson))
+- Refactor test method names to camel case ([@matt-edmondson](https://github.com/matt-edmondson))
+- Rename package to ktsu.ToStringJsonConverter and update ktsu.Extensions to version 1.0.30 ([@matt-edmondson](https://github.com/matt-edmondson))
+- Renamed metadata files ([@matt-edmondson](https://github.com/matt-edmondson))
+- Replace LICENSE file with LICENSE.md and update copyright information ([@matt-edmondson](https://github.com/matt-edmondson))
+- Update ktsu.Extensions package reference to version 1.0.31 ([@matt-edmondson](https://github.com/matt-edmondson))
+- Update LICENSE file to LICENSE.md with copyright notice ([@matt-edmondson](https://github.com/matt-edmondson))
+
 ## v1.0.48 (patch)
 
 Changes since v1.0.48-pre.30:
