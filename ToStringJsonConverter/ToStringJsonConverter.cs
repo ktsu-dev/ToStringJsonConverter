@@ -1,11 +1,10 @@
-// Ignore Spelling: Stringify
-
 namespace ktsu.ToStringJsonConverter;
 
 using System.Diagnostics;
 using System.Reflection;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+
 using ktsu.Extensions;
 
 /// <summary>
