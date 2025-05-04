@@ -1,4 +1,7 @@
-// Ignore Spelling: Serializer
+// Copyright (c) ktsu.dev
+// All rights reserved.
+// Licensed under the MIT license.
+
 #pragma warning disable IL2026 // Members annotated with 'RequiresUnreferencedCodeAttribute' require dynamic access otherwise can break functionality when trimming application code
 #pragma warning disable IL3050 // Calling members annotated with 'RequiresDynamicCodeAttribute' may break functionality when AOT compiling.
 
@@ -30,7 +33,7 @@ public class Test
 	public void TestRoundTrip()
 	{
 		Test test = new("test");
-		string jsonString = JsonSerializer.Serialize(test, JsonSerializerOptions);
+		var jsonString = JsonSerializer.Serialize(test, JsonSerializerOptions);
 		var result = JsonSerializer.Deserialize<Test>(jsonString, JsonSerializerOptions);
 		Assert.IsNotNull(result);
 		Assert.AreEqual(test.hiddenString, result.hiddenString);
@@ -48,7 +51,7 @@ public class Test
 				new("test2"), 2
 			},
 		};
-		string jsonString = JsonSerializer.Serialize(test, JsonSerializerOptions);
+		var jsonString = JsonSerializer.Serialize(test, JsonSerializerOptions);
 		var result = JsonSerializer.Deserialize<Dictionary<Test, int>>(jsonString, JsonSerializerOptions) ?? [];
 		Assert.IsTrue(test.Keys.Select(x => x.hiddenString).SequenceEqual(result.Keys.Select(x => x.hiddenString)));
 		Assert.IsTrue(test.Values.SequenceEqual(result.Values));

@@ -1,3 +1,7 @@
+// Copyright (c) ktsu.dev
+// All rights reserved.
+// Licensed under the MIT license.
+
 #pragma warning disable IL2026 // Members annotated with 'RequiresUnreferencedCodeAttribute' require dynamic access otherwise can break functionality when trimming application code
 #pragma warning disable IL3050 // Calling members annotated with 'RequiresDynamicCodeAttribute' may break functionality when AOT compiling.
 
@@ -67,7 +71,7 @@ public class ToStringJsonConverterFactoryTests
 	{
 		var options = GetOptions();
 		var testInstance = new TestClass { Value = "test value" };
-		string json = JsonSerializer.Serialize(testInstance, options);
+		var json = JsonSerializer.Serialize(testInstance, options);
 		Assert.AreEqual("\"test value\"", json);
 	}
 
@@ -76,7 +80,7 @@ public class ToStringJsonConverterFactoryTests
 	{
 		var options = GetOptions();
 		var testInstance = new TestClass<int> { Value = "test value" };
-		string json = JsonSerializer.Serialize(testInstance, options);
+		var json = JsonSerializer.Serialize(testInstance, options);
 		Assert.AreEqual("\"test value\"", json);
 	}
 
@@ -84,7 +88,7 @@ public class ToStringJsonConverterFactoryTests
 	public void DeserializeShouldUseFromString()
 	{
 		var options = GetOptions();
-		string json = "\"test value\"";
+		var json = "\"test value\"";
 		var testInstance = JsonSerializer.Deserialize<TestClass>(json, options);
 		Assert.IsNotNull(testInstance);
 		Assert.AreEqual("test value", testInstance.Value);
@@ -94,7 +98,7 @@ public class ToStringJsonConverterFactoryTests
 	public void DeserializeGenericShouldUseFromString()
 	{
 		var options = GetOptions();
-		string json = "\"test value\"";
+		var json = "\"test value\"";
 		var testInstance = JsonSerializer.Deserialize<TestClass<int>>(json, options);
 		Assert.IsNotNull(testInstance);
 		Assert.AreEqual("test value", testInstance.Value);
@@ -104,7 +108,7 @@ public class ToStringJsonConverterFactoryTests
 	public void DeserializeShouldThrowJsonExceptionForInvalidToken()
 	{
 		var options = GetOptions();
-		string json = "123";
+		var json = "123";
 		Assert.ThrowsException<JsonException>(() => JsonSerializer.Deserialize<TestClass>(json, options));
 	}
 }
