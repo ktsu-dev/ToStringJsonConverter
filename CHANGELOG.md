@@ -1,3 +1,9 @@
+## v1.2.3 (patch)
+
+Changes since v1.2.2:
+
+- Refactor DESCRIPTION and update project SDK references to ktsu.Sdk.Lib and ktsu.Sdk.Test ([@matt-edmondson](https://github.com/matt-edmondson))
+
 ## v1.2.2 (patch)
 
 Changes since v1.2.1:
