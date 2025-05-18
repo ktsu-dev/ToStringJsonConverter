@@ -24,6 +24,32 @@ Changes since v1.2.4-pre.15:
 - Add mailmap ([@matt-edmondson](https://github.com/matt-edmondson))
 - Replace LICENSE file with LICENSE.md and update copyright information ([@matt-edmondson](https://github.com/matt-edmondson))
 - Add LICENSE template ([@matt-edmondson](https://github.com/matt-edmondson))
+## v1.2.4-pre.16 (prerelease)
+
+Changes since v1.2.4-pre.15:
+
+- Refactor test method names to camel case ([@matt-edmondson](https://github.com/matt-edmondson))
+- Renamed metadata files ([@matt-edmondson](https://github.com/matt-edmondson))
+- Add scripts for automated metadata generation and versioning ([@matt-edmondson](https://github.com/matt-edmondson))
+- Add null check in TestRoundTrip to prevent null exception ([@matt-edmondson](https://github.com/matt-edmondson))
+- Update README with comprehensive documentation and usage examples ([@matt-edmondson](https://github.com/matt-edmondson))
+- 1.0.0 ([@matt-edmondson](https://github.com/matt-edmondson))
+- Add documentation comments ([@matt-edmondson](https://github.com/matt-edmondson))
+- Rename package to ktsu.ToStringJsonConverter and update ktsu.Extensions to version 1.0.30 ([@matt-edmondson](https://github.com/matt-edmondson))
+- Update Extensions package, and project version ([@matt-edmondson](https://github.com/matt-edmondson))
+- Apply new editorconfig ([@matt-edmondson](https://github.com/matt-edmondson))
+- Update LICENSE file to LICENSE.md with copyright notice ([@matt-edmondson](https://github.com/matt-edmondson))
+- Refactor DESCRIPTION and update project SDK references to ktsu.Sdk.Lib and ktsu.Sdk.Test ([@matt-edmondson](https://github.com/matt-edmondson))
+- Update packages ([@matt-edmondson](https://github.com/matt-edmondson))
+- Migrate ktsu.io to ktsu namespace ([@matt-edmondson](https://github.com/matt-edmondson))
+- Add project files. ([@matt-edmondson](https://github.com/matt-edmondson))
+- Suppress specific warnings in csproj ([@matt-edmondson](https://github.com/matt-edmondson))
+- Update ktsu.Extensions package reference to version 1.0.31 ([@matt-edmondson](https://github.com/matt-edmondson))
+- Migrate ktsu.io to ktsu namespace ([@matt-edmondson](https://github.com/matt-edmondson))
+- Remove Directory.Build.props and Directory.Build.targets files; add copyright headers to ToStringJsonConverter and test files. ([@matt-edmondson](https://github.com/matt-edmondson))
+- Add mailmap ([@matt-edmondson](https://github.com/matt-edmondson))
+- Replace LICENSE file with LICENSE.md and update copyright information ([@matt-edmondson](https://github.com/matt-edmondson))
+- Add LICENSE template ([@matt-edmondson](https://github.com/matt-edmondson))
 ## v1.2.4-pre.15 (prerelease)
 
 Changes since v1.2.4-pre.14:
