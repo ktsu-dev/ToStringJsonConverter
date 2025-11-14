@@ -1,3 +1,11 @@
+# ⚠️ DEPRECATED
+
+**This project is no longer maintained.** Its functionality has been moved to [ktsu.RoundTripStringJsonConverter](https://github.com/ktsu-dev/RoundTripStringJsonConverter).
+
+Please migrate to the new library for continued support and updates.
+
+---
+
 # ktsu.ToStringJsonConverter
 
 > A JSON converter factory that serializes objects using their ToString and FromString methods.
